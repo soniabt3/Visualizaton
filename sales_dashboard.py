@@ -224,7 +224,8 @@ def create_forecast_chart(df_forecast, df_historical):
 
 
 # --- 4. Initialize Dash App ---
-app = Dash(__name__)
+# app = Dash(__name__)
+app = Dash(__name__, external_stylesheets=[dbc.themes.FLATLY], suppress_callback_exceptions=False)
 server = app.server
 
 # --- Custom Insight Block Function ---
@@ -405,7 +406,6 @@ app.layout = html.Div(style={'backgroundColor': '#f0f2f5', 'padding': '20px'}, c
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1', port=8050)
 
-server = app.server
 
 # In[ ]:
 
