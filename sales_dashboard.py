@@ -95,7 +95,7 @@ EXPLANATIONS = {
 # --- 1. Data Loading and Preprocessing ---
 try:
     # Assuming 'superstore_final_dataset.csv' is in the same directory
-    df = pd.read_csv('data/superstore_final_dataset.csv', encoding='latin1')
+    df = pd.read_csv('superstore_final_dataset.csv', encoding='latin1')
     
     df['Order_Date'] = pd.to_datetime(df['Order_Date'], infer_datetime_format=True, dayfirst=True)
     df = df.sort_values('Order_Date')
