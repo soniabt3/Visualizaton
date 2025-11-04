@@ -301,7 +301,7 @@ app.layout = html.Div(style={'backgroundColor': '#f0f2f5', 'padding': '20px'}, c
             ]),
             # Text Insight (50% of this 50% block)
             html.Div(style={'width': '50%', 'paddingLeft': '5px'}, children=[ 
-                create_insight_block('sales-by-category', '370px')
+                create_insight_block('sales-by-category', CHART_INNER_HEIGHT)
             ])
         ]),
         
@@ -315,7 +315,7 @@ app.layout = html.Div(style={'backgroundColor': '#f0f2f5', 'padding': '20px'}, c
             ]),
             # Text Insight (50% of this 50% block)
             html.Div(style={'width': '50%', 'paddingLeft': '5px'}, children=[ 
-                create_insight_block('sales-by-state', '370px')
+                create_insight_block('sales-by-state', CHART_INNER_HEIGHT)
             ])
         ])
     ]),
@@ -332,7 +332,7 @@ app.layout = html.Div(style={'backgroundColor': '#f0f2f5', 'padding': '20px'}, c
             ]),
             # Text Insight (50% of this 50% block)
             html.Div(style={'width': '50%', 'paddingLeft': '5px'}, children=[ 
-                create_insight_block('sales-by-segment-donut', '370px')
+                create_insight_block('sales-by-segment-donut', CHART_INNER_HEIGHT)
             ])
         ]),
         
@@ -346,7 +346,7 @@ app.layout = html.Div(style={'backgroundColor': '#f0f2f5', 'padding': '20px'}, c
             ]),
             # Text Insight (50% of this 50% block)
             html.Div(style={'width': '50%', 'paddingLeft': '5px'}, children=[ 
-                create_insight_block('sales-by-ship-mode-boxplot', '370px')
+                create_insight_block('sales-by-ship-mode-boxplot', CHART_INNER_HEIGHT)
             ])
         ])
     ]),
@@ -377,7 +377,7 @@ app.layout = html.Div(style={'backgroundColor': '#f0f2f5', 'padding': '20px'}, c
             ]),
             # Text Insight (50% of this 50% block)
             html.Div(style={'width': '25%', 'paddingLeft': '5px'}, children=[ 
-                create_insight_block('sales-composition-by-region', '370px')
+                create_insight_block('sales-composition-by-region', CHART_INNER_HEIGHT)
             ])
         ]),
         
@@ -391,7 +391,7 @@ app.layout = html.Div(style={'backgroundColor': '#f0f2f5', 'padding': '20px'}, c
             ]),
             # Text Insight (50% of this 50% block)
             html.Div(style={'width': '25%', 'paddingLeft': '5px'}, children=[ 
-                create_insight_block('sales-forecast-chart', '370px')
+                create_insight_block('sales-forecast-chart', CHART_INNER_HEIGHT)
             ])
         ])
     ]),
